@@ -1,3 +1,8 @@
 {
-  
+  "app_name": "application name",
+  "main_msg": "Welcome here is main.dart",
+  "double_tap_msg": "If you want to close, please on more tap",
+  "ready": "ready",
+  "loading": "loading",
+  "login": "login"
 }

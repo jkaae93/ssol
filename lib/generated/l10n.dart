@@ -49,6 +49,66 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `application name`
+  String get app_name {
+    return Intl.message(
+      'application name',
+      name: 'app_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome here is main.dart`
+  String get main_msg {
+    return Intl.message(
+      'Welcome here is main.dart',
+      name: 'main_msg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you want to close, please on more tap`
+  String get double_tap_msg {
+    return Intl.message(
+      'If you want to close, please on more tap',
+      name: 'double_tap_msg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ready`
+  String get ready {
+    return Intl.message(
+      'ready',
+      name: 'ready',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `loading`
+  String get loading {
+    return Intl.message(
+      'loading',
+      name: 'loading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `login`
+  String get login {
+    return Intl.message(
+      'login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -57,6 +117,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ko'),
     ];
   }
 

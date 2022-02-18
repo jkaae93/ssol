@@ -17,6 +17,9 @@
 import 'package:custom_refresh_indicator/custom_refresh_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ssol/tools/strings.dart';
+
+import 'colors.dart';
 
 class Ssolcaffold extends StatefulWidget {
   final String? title;
@@ -64,7 +67,8 @@ class TitleAppbar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(title),
+      title: Stext(title),
+      leading: const Icon(Icons.keyboard_arrow_left_rounded),
     );
   }
 }
@@ -126,4 +130,38 @@ class _ssolRefreshState extends State<ssolRefresh> {
       ),
     );
   }
+}
+
+class Stext extends Text {
+  final String text;
+  final Color? color;
+  final Color? backgroundColor;
+  final FontWeight? fontWeight;
+  final TextOverflow? textOverflow;
+
+  const Stext(this.text, {this.color, this.backgroundColor, this.fontWeight, this.textOverflow}) : super(text);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(text,
+        overflow: overflow,
+        style: tStyle(
+          18,
+          color: color,
+          backgroundColor: backgroundColor,
+          fontWeight: fontWeight,
+        ));
+  }
+}
+
+TextStyle get defaultText => const TextStyle(color: Solors.black, fontFamily: Strings.fontFamily);
+
+TextStyle tStyle(double size, {Color? color, Color? backgroundColor, FontWeight? fontWeight, TextOverflow? overflow}) {
+  return defaultText.copyWith(
+    fontSize: size,
+    color: color,
+    backgroundColor: backgroundColor,
+    fontWeight: fontWeight,
+    overflow: overflow,
+  );
 }
