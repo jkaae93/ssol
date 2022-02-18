@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1075674336551",
+    "project_id": "haruep-1f7e8",
+    "storage_bucket": "haruep-1f7e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075674336551:android:2182609c9c5e86b0866d02",
+        "android_client_info": {
+          "package_name": "om.oc.ssol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075674336551-em0lpcqe7p81s043qd4e5mug73lkt43j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4rR1YD2Ykz2uskQf-jDREPqm1z1suU20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075674336551-em0lpcqe7p81s043qd4e5mug73lkt43j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1075674336551-n4e41fsh0nmue05i0d97v46va1r97t24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "om.oc.ssol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

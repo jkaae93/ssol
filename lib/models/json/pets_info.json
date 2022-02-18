@@ -1,0 +1,16 @@
+{
+  "d@count" : 0,
+  "pets" : [
+    {
+      "d@name" : "",
+      "d@type" : 0,
+      "d@age" : 0,
+      "r@disese" : [],
+      "r@tag" : {
+        "d@name" : "",
+        "r@id" : "",
+        "d@connected" : false
+      }
+    }
+  ]
+}

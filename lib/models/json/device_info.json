@@ -1,0 +1,14 @@
+{
+  "count" : 1,
+  "devices" : [
+    {
+      "name" : "device name",
+      "type" : "deviece type",
+      "id" : "device id",
+      "status" : {
+        "connection" : true,
+        "last_update" : "2021-11-21 01:25"
+      }
+    }
+  ]
+}
